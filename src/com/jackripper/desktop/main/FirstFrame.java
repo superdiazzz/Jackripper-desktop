@@ -1,6 +1,7 @@
 package com.jackripper.desktop.main;
 
 import java.awt.*;
+import java.awt.event.*;
 import javax.swing.*;
 import com.jgoodies.forms.factories.*;
 import com.jgoodies.forms.layout.*;
@@ -13,9 +14,18 @@ import com.jgoodies.forms.layout.*;
 /**
  * @author Vincentius Ivan
  */
-public class TestTitle extends JFrame {
-	public TestTitle() {
+public class FirstFrame extends JFrame {
+	public FirstFrame() {
 		initComponents();
+	}
+
+	private void okButtonActionPerformed(ActionEvent e) {
+		// TODO add your code here
+	}
+
+	private void cancelButtonActionPerformed(ActionEvent e) {
+		
+		
 	}
 
 	private void initComponents() {
@@ -69,10 +79,20 @@ public class TestTitle extends JFrame {
 
 				//---- okButton ----
 				okButton.setText("OK");
+				okButton.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						okButtonActionPerformed(e);
+					}
+				});
 				buttonBar.add(okButton, cc.xy(2, 1));
 
 				//---- cancelButton ----
 				cancelButton.setText("Cancel");
+				cancelButton.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						cancelButtonActionPerformed(e);
+					}
+				});
 				buttonBar.add(cancelButton, cc.xy(4, 1));
 			}
 			dialogPane.add(buttonBar, BorderLayout.SOUTH);

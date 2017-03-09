@@ -45,7 +45,7 @@ public class JackRipperDesktopApp extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				TestTitle testFrame = new TestTitle();
+				FirstFrame testFrame = new FirstFrame();
 				testFrame.setVisible(true);
 			}
 		});
