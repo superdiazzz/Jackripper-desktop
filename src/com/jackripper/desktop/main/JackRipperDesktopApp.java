@@ -13,6 +13,7 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 
 import com.jackripper.desktop.config.Configur;
+import com.jackripper.desktop.modul.FirstFrame;
 
 public class JackRipperDesktopApp extends JFrame {
 	

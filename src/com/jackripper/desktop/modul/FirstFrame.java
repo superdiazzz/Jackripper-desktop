@@ -1,4 +1,4 @@
-package com.jackripper.desktop.main;
+package com.jackripper.desktop.modul;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -6,7 +6,7 @@ import javax.swing.*;
 import com.jgoodies.forms.factories.*;
 import com.jgoodies.forms.layout.*;
 /*
- * Created by JFormDesigner on Wed Mar 08 15:03:33 ICT 2017
+ * Created by JFormDesigner on Thu Mar 09 13:27:21 ICT 2017
  */
 
 
@@ -24,8 +24,7 @@ public class FirstFrame extends JFrame {
 	}
 
 	private void cancelButtonActionPerformed(ActionEvent e) {
-		
-		
+		// TODO add your code here
 	}
 
 	private void initComponents() {
@@ -38,7 +37,7 @@ public class FirstFrame extends JFrame {
 		CellConstraints cc = new CellConstraints();
 
 		//======== this ========
-		setTitle("Ini title");
+		setTitle("Fist Frame");
 		Container contentPane = getContentPane();
 		contentPane.setLayout(new BorderLayout());
 
